@@ -1,6 +1,6 @@
-variable "sample" {}
 
-variable "sample1" {
+
+variable "sample" {
   default = "Hello World"
 }
 
