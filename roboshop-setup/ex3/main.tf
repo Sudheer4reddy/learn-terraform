@@ -9,7 +9,7 @@ resource "aws_instance" "instances" {
   for_each               = var.instances
   ami                    = data.aws_ami.ami.image_id
   instance_type          = each.value["type"]
-  vpc_security_group_ids = ["sg-0fc69f59ac03ac238"]
+  vpc_security_group_ids = ["sg-0a200456bd387da98"]
   tags = {
     Name = each.value["name"]
   }
